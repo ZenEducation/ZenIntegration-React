@@ -1,0 +1,20 @@
+{
+  "staging": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-vueawsintegration-staging-175216-authRole",
+      "UnauthRoleArn": "arn:aws:iam::596109967064:role/amplify-vueawsintegration-staging-175216-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::596109967064:role/amplify-vueawsintegration-staging-175216-authRole",
+      "Region": "us-west-2",
+      "DeploymentBucketName": "amplify-vueawsintegration-staging-175216-deployment",
+      "UnauthRoleName": "amplify-vueawsintegration-staging-175216-unauthRole",
+      "StackName": "amplify-vueawsintegration-staging-175216",
+      "StackId": "arn:aws:cloudformation:us-west-2:596109967064:stack/amplify-vueawsintegration-staging-175216/ab002050-24ca-11ee-bb17-0a16a51567f3",
+      "AmplifyAppId": "d8pwhbygjdplo"
+    },
+    "categories": {
+      "api": {
+        "reactawsintegration": {}
+      }
+    }
+  }
+}

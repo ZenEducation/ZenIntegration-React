@@ -21,14 +21,14 @@ export const schema = {
                     "name": "email",
                     "isArray": false,
                     "type": "String",
-                    "isRequired": true,
+                    "isRequired": false,
                     "attributes": []
                 },
                 "message": {
                     "name": "message",
                     "isArray": false,
                     "type": "String",
-                    "isRequired": true,
+                    "isRequired": false,
                     "attributes": []
                 },
                 "createdAt": {
@@ -60,6 +60,6 @@ export const schema = {
     },
     "enums": {},
     "nonModels": {},
-    "codegenVersion": "3.4.4",
-    "version": "de7d14a42eb5edff055e5311d52fc792"
+    "codegenVersion": "3.3.5",
+    "version": "19302e8ba250a81a16a623dc8787c04a"
 };

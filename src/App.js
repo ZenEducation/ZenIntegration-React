@@ -1,38 +1,41 @@
 import React from 'react'
 import Form from './pages/Form';
 import FormDetails from './pages/FormDetails';
-import './app.css';
-import { createBrowserRouter, Outlet, RouterProvider,ScrollRestoration } from 'react-router-dom';
+import './App.css';
+import { Amplify} from "aws-amplify";
+import awsconfig from './aws-exports';
+import { createBrowserRouter, Outlet, RouterProvider, ScrollRestoration } from 'react-router-dom';
 
 const Layout = () => {
   return (
     <div>
-      <Outlet/>
+      <Outlet />
     </div>
   )
 }
 const Router = createBrowserRouter([
   {
     path: '/',
-    element: <Layout/>,
+    element: <Layout />,
     children: [
       {
         path: '/',
-        element: <Form/>
+        element: <Form />
       },
       {
         path: '/formDetails',
-        element: <FormDetails/>
+        element: <FormDetails />
       }
     ]
   }
 ])
 
 const App = () => {
+Amplify.configure(awsconfig);
 
   return (
     <div>
-      <RouterProvider router ={Router}/>
+      <RouterProvider router={Router} />
     </div>
   )
 }

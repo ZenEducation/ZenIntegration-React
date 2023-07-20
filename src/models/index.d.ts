@@ -13,8 +13,8 @@ type EagerTodo = {
   };
   readonly id: string;
   readonly name: string;
-  readonly email: string;
-  readonly message: string;
+  readonly email?: string | null;
+  readonly message?: string | null;
   readonly createdAt?: string | null;
   readonly updatedAt?: string | null;
 }
@@ -26,8 +26,8 @@ type LazyTodo = {
   };
   readonly id: string;
   readonly name: string;
-  readonly email: string;
-  readonly message: string;
+  readonly email?: string | null;
+  readonly message?: string | null;
   readonly createdAt?: string | null;
   readonly updatedAt?: string | null;
 }

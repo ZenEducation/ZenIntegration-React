@@ -1,6 +1,6 @@
 projects:
   reactawsintegration:
-    schemaPath: 'D:/Pathshala/vue-aws-integration/graphql/schema.json'
+    schemaPath: src/graphql/schema.json
     includes:
       - src/graphql/**/*.js
     excludes:

@@ -1,28 +1,17 @@
-import React from 'react'
+import React, { useState } from 'react'
 import style from '../style/formDetails.module.css';
 import {fetchTodo} from '../api/todo';
 const FormDetails = () => {
-  const data = [
-    {name: 'bhavya',
-    email: 'bhavya@gmail.com',
-    message: 'hey this is a message'
-    },
-    {
-      name: 'harsh',
-      email: 'harsh@gmail.com',
-      message: "message by harsh"
-    },
-    {
-      name: 'kalika',
-      email: 'kalika@gmail.com',
-      message: 'message by kalika'
-    }
-  ]
+  const [data, setData] = useState([])
 
  const fetchData = async()=> {
   const data = await fetchTodo();
+  setData(data)
   console.log("fetched data", data);
  }
+ useState(() => {
+  fetchData()
+ },[])
   return (
     <div>
       <table>
@@ -36,7 +25,7 @@ const FormDetails = () => {
         <tbody>
           {
             data.map((item)=> (
-            <tr>
+            <tr key={item.id}>
               <td>{item.name}</td>
               <td>{item.email}</td>
               <td>{item.message}</td>

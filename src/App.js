@@ -1,7 +1,7 @@
 import React from 'react'
 import Form from './pages/Form';
 import FormDetails from './pages/FormDetails';
-import './App.css';
+import '../src/app.css';
 import { Amplify} from "aws-amplify";
 import awsconfig from './aws-exports';
 import { createBrowserRouter, Outlet, RouterProvider, ScrollRestoration } from 'react-router-dom';

@@ -34,7 +34,6 @@ const FormDetails = () => {
           }
         </tbody>
       </table>
-      <button onClick={fetchData}>fetch data</button>
     </div>
   )
 }

@@ -10,11 +10,6 @@
       "StackName": "amplify-vueawsintegration-staging-175216",
       "StackId": "arn:aws:cloudformation:us-west-2:596109967064:stack/amplify-vueawsintegration-staging-175216/ab002050-24ca-11ee-bb17-0a16a51567f3",
       "AmplifyAppId": "d8pwhbygjdplo"
-    },
-    "categories": {
-      "api": {
-        "reactawsintegration": {}
-      }
     }
   }
 }
